@@ -162,7 +162,7 @@ svg.line{fill: none;stroke-width: 2;animation: moving .7s linear infinite altern
           </g>
         </svg>
     </div>
-    <p id="ket">Touch the Love!</p>
+    <p id="ket">Touch the symbol!</p>
 
     <div class="kumpulanstiker">
       <!-- Stiker untuk Konten -->
@@ -178,7 +178,7 @@ svg.line{fill: none;stroke-width: 2;animation: moving .7s linear infinite altern
 
         <!-- Pesan -->
         <p><b><img src="./assets/pusn.gif" /><br>
-            <span>Hey You 🤭❤️</span>
+            <span>Hi Sahana 🤭</span>
           </b></p>
 
         <p><b><img src="./assets/mikir.gif" /><br>
@@ -237,20 +237,20 @@ svg.line{fill: none;stroke-width: 2;animation: moving .7s linear infinite altern
     tomnegatif = "No";
     async function aksibalas() {
       var { isConfirmed: prtanya } = await swals.fire({
-        title: 'Do you want a gift? 🤭❤️',
+        title: 'Do you want a gift? 🤭',
         imageUrl: '' + fotostikerPopup.src, showCancelButton: true, confirmButtonText: '' + tompositif, cancelButtonText: '' + tomnegatif, cancelButtonColor: '#FF0000',
       });
       if (prtanya) {
         await swalst.fire({
           title: 'Just kidding! 🤣',
-          html: 'No gift for you 😜❤️',
+          html: 'No gift for you 😜',
           imageUrl: '' + fotostikerPopupCon.src,
         });
         poinjwb = 1;
       } else {
         await swals.fire({
           title: 'Oh no!',
-          html: 'Alright, if you don’t want it 😜❤️',
+          html: 'Alright, if you don’t want it 😜',
           imageUrl: '' + fotostikerPopupCan.src,
         });
         poinjwb = 2;
